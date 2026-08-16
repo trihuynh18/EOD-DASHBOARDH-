@@ -555,6 +555,21 @@ st.markdown("""
     [data-testid="stAppDeployButton"] {
         display: none !important;
     }
+    /* Fix riêng cho ô tìm kiếm và number_input trong tab Toàn bộ thị trường -
+       đảm bảo luôn nền tối, không bị trắng dù theme hệ thống là gì */
+    [data-testid="stTextInput"] input,
+    [data-testid="stNumberInput"] input {
+        background-color: #1E2030 !important;
+        color: #F1F5F9 !important;
+        -webkit-text-fill-color: #F1F5F9 !important;
+    }
+
+    [data-testid="stTextInput"] > div > div,
+    [data-testid="stNumberInput"] > div > div {
+        background-color: #1E2030 !important;
+        border: 1px solid rgba(255, 255, 255, 0.12) !important;
+        border-radius: 10px !important;
+    }
     </style>
 """, unsafe_allow_html=True)
 
