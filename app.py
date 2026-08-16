@@ -19,6 +19,10 @@ st.set_page_config(
 # 2. CUSTOM CSS - FIX TRIỆT ĐỂ MÀU CHỮ DATE INPUT, CHỚP TRẮNG POPOVER/SELECTBOX, SCROLLBAR & CALENDAR
 st.markdown("""
     <style>
+    html, body, #root, .stApp, [data-testid="stAppViewContainer"], [data-testid="stMain"] {
+        background-color: #0F111A !important;
+        color: #E2E8F0 !important;
+    }
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
     html, body, [class*="css"] {
