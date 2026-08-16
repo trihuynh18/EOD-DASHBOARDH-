@@ -535,6 +535,22 @@ st.markdown("""
         font-size: 1.15rem;
         letter-spacing: 0.3px;
     }
+    /* Ẩn hoàn toàn menu 3 chấm (hamburger menu) góc trên phải,
+       bên trong đó có Settings -> Choose app theme (System/Light/Dark) */
+    #MainMenu {
+        visibility: hidden !important;
+        display: none !important;
+    }
+
+    /* Ẩn luôn footer "Made with Streamlit" nếu có, cho gọn giao diện */
+    footer {
+        visibility: hidden !important;
+    }
+
+    /* Ẩn nút Deploy nếu vẫn còn hiện */
+    [data-testid="stAppDeployButton"] {
+        display: none !important;
+    }
     </style>
 """, unsafe_allow_html=True)
 
