@@ -1,0 +1,15 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Aug 16 11:44:00 2026
+
+@author: Lenovo
+"""
+
+venv/
+env/
+.venv/
+__pycache__/
+*.pyc
+.streamlit/secrets.toml
+.DS_Store
+Thumbs.db
